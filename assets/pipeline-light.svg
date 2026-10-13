@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%" style="background-color: #f8fafc; font-family: 'Courier New', Courier, monospace;">
+  <!-- Main Terminal Window Frame -->
+  <rect x="10" y="10" width="880" height="260" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+
+  <!-- Window Control Buttons (Red, Yellow, Green) -->
+  <circle cx="30" cy="28" r="6" fill="#ef4444" />
+  <circle cx="48" cy="28" r="6" fill="#f59e0b" />
+  <circle cx="66" cy="28" r="6" fill="#10b981" />
+
+  <!-- Header Title -->
+  <text x="450" y="32" fill="#0f172a" font-size="14" font-weight="bold" text-anchor="middle">
+    <tspan fill="#10b981">ajaytiwari@github:~$</tspan> python -m evals.run suite
+  </text>
+
+  <!-- Running Badge -->
+  <circle cx="820" cy="28" r="4" fill="#10b981" />
+  <text x="830" y="32" fill="#059669" font-size="12" font-weight="bold">RUNNING</text>
+
+  <!-- Definitions / Marker for Arrows -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#64748b" />
+    </marker>
+  </defs>
+
+  <!-- ================= SECTION 1: RUNTIME PIPELINE ================= -->
+  <text x="30" y="62" fill="#64748b" font-size="12" font-weight="bold"># run time  rag pipeline.invoke()</text>
+
+  <!-- Webhook Box -->
+  <rect x="30" y="75" width="125" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="92" y="94" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">WEBHOOK</text>
+  <text x="92" y="112" fill="#475569" font-size="11" text-anchor="middle">HMAC verified</text>
+
+  <line x1="155" y1="100" x2="175" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Condense Box -->
+  <rect x="182" y="75" width="125" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="244" y="94" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">CONDENSE</text>
+  <text x="244" y="112" fill="#475569" font-size="11" text-anchor="middle">memory rewrite</text>
+
+  <line x1="307" y1="100" x2="327" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Retrieve Box -->
+  <rect x="334" y="75" width="125" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="396" y="94" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">RETRIEVE</text>
+  <text x="396" y="112" fill="#475569" font-size="11" text-anchor="middle">vectors top k</text>
+
+  <line x1="459" y1="100" x2="479" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Rerank Box -->
+  <rect x="486" y="75" width="125" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="548" y="94" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">RERANK</text>
+  <text x="548" y="112" fill="#475569" font-size="11" text-anchor="middle">cross enc · top 3</text>
+
+  <line x1="611" y1="100" x2="631" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Generate Box -->
+  <rect x="638" y="75" width="125" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="700" y="94" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">GENERATE</text>
+  <text x="700" y="112" fill="#475569" font-size="11" text-anchor="middle">grounded prompt</text>
+
+  <line x1="763" y1="100" x2="783" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Reply Box -->
+  <rect x="790" y="75" width="80" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="830" y="94" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">REPLY</text>
+  <text x="830" y="112" fill="#475569" font-size="11" text-anchor="middle">WhatsApp</text>
+
+  <!-- ================= SECTION 2: RELEASE GATE EVALUATIONS ================= -->
+  <text x="30" y="152" fill="#64748b" font-size="12" font-weight="bold"># release gate  evaluated per component, then end to end, with an LLM judge</text>
+
+  <!-- Component Box -->
+  <rect x="30" y="165" width="155" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="107" y="184" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">COMPONENT</text>
+  <text x="107" y="202" fill="#475569" font-size="11" text-anchor="middle">retriever · generator</text>
+
+  <!-- Green Diamond Icon Connector -->
+  <polygon points="199,185 204,190 199,195 194,190" fill="#10b981" />
+
+  <!-- End-To-End Box -->
+  <rect x="210" y="165" width="155" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="287" y="184" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">END-TO-END</text>
+  <text x="287" y="202" fill="#475569" font-size="11" text-anchor="middle">RAG triad · GEval</text>
+
+  <line x1="365" y1="190" x2="385" y2="190" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Safety + Ops Box -->
+  <rect x="392" y="165" width="185" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="484" y="184" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">SAFETY + OPS</text>
+  <text x="484" y="202" fill="#475569" font-size="11" text-anchor="middle">leakage · PII · p95 · cost</text>
+
+  <line x1="577" y1="190" x2="597" y2="190" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Compare Box -->
+  <rect x="604" y="165" width="120" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <text x="664" y="184" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">COMPARE</text>
+  <text x="664" y="202" fill="#475569" font-size="11" text-anchor="middle">vs baseline</text>
+
+  <line x1="724" y1="190" x2="744" y2="190" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Pass Gate Box (Highlighted Green) -->
+  <rect x="751" y="165" width="119" height="50" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="2" />
+  <text x="810" y="184" fill="#059669" font-size="12" font-weight="bold" text-anchor="middle">PASS</text>
+  <text x="810" y="202" fill="#047857" font-size="11" text-anchor="middle">gate → ship</text>
+
+  <!-- ================= SECTION 3: FOOTER JUDGE INFO ================= -->
+  <text x="30" y="245" fill="#059669" font-size="13" font-weight="bold">[judge]</text>
+  <text x="120" y="245" fill="#334155" font-size="12">GEval   correctness   completeness   style</text>
+</svg>
