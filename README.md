@@ -22,8 +22,6 @@
   <circle cx="46" cy="20" r="6" fill="#ffbd2e"/>
   <circle cx="66" cy="20" r="6" fill="#27c93f"/>
   <text x="450.0" y="25" text-anchor="middle" class="mono dim" font-size="13">ajaytiwari@india:~$ whoami</text>
-  <text x="450.0" y="48" text-anchor="middle" class="mono" font-size="12" fill="#24292f" font-weight="700">Ajay Tiwari • India</text>
-  <text x="450.0" y="62" text-anchor="middle" class="mono dim" font-size="10">portfolio: ajtiwari1.github.io • linkedin: ajay-tiwari67 • email: tiwariajay12351@gmail.com</text>
   <circle cx="806" cy="20" r="4" fill="#1a7f37">
     <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
   </circle>
@@ -76,8 +74,8 @@
   <rect x="750" y="84" width="120" height="56" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
     <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.869;0.929;0.989;1" dur="8s" begin="0s" repeatCount="indefinite"/>
   </rect>
-  <text x="810.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">CONNECT</text>
-  <text x="810.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">portfolio · email</text>
+  <text x="810.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">REPLY</text>
+  <text x="810.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">WhatsApp</text>
 
   <!-- offline: the same pipeline, scored before release -->
   <text x="30" y="176" class="mono dim" font-size="12"># release gate · evaluated per component, then end-to-end, with an LLM judge</text>
@@ -139,3 +137,11 @@
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.800;0.830;0.970;0.999;1.000" dur="12.0s" repeatCount="indefinite"/>
   </text>
 </svg>
+
+## Connect with me
+
+**Ajay Tiwari** · India
+
+- [Portfolio](https://ajtiwari1.github.io)
+- [LinkedIn](https://www.linkedin.com/in/ajay-tiwari67/)
+- [Email](mailto:tiwariajay12351@gmail.com)
