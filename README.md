@@ -1,147 +1,150 @@
-<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .mono { font-family: 'Courier New', Consolas, monospace; }
-      .label { fill: #8250df; font-weight: 700; }
-      .val { fill: #24292f; }
-      .dim { fill: #57606a; }
-    </style>
-    <path id="runFlow" d="M 30,112.0 H 870" fill="none"/>
-    <path id="gateFlow" d="M 30,216.0 H 870" fill="none"/>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0969da"/>
-      <stop offset="100%" stop-color="#8250df"/>
-    </linearGradient>
-  </defs>
+<div align="center">
 
-  <!-- window frame -->
-  <rect x="1" y="1" width="898" height="298" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
-  <rect x="1" y="1" width="898" height="40" rx="14" fill="#f6f8fa"/>
-  <rect x="1" y="27" width="898" height="14" fill="#f6f8fa"/>
-  <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
-  <circle cx="46" cy="20" r="6" fill="#ffbd2e"/>
-  <circle cx="66" cy="20" r="6" fill="#27c93f"/>
-  <text x="450.0" y="25" text-anchor="middle" class="mono dim" font-size="13">ajaytiwari@india:~$ whoami</text>
-  <circle cx="806" cy="20" r="4" fill="#1a7f37">
-    <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
-  </circle>
-  <text x="816" y="24" class="mono" font-size="12" fill="#1a7f37" font-weight="700">RUNNING</text>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/light.svg">
+  <img src="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/dark.svg" alt="Ajay Tiwari — Generative AI Engineer">
+</picture>
 
-  <!-- runtime: one chat message -->
-  <text x="30" y="70" class="mono dim" font-size="12"># runtime · rag_pipeline.invoke()</text>
-  <line x1="30" y1="112.0" x2="870" y2="112.0" stroke="#d0d7de" stroke-width="1.5" stroke-dasharray="4 5">
-    <animate attributeName="stroke-dashoffset" values="18;0" dur="1.2s" repeatCount="indefinite"/>
-  </line>
-  <circle r="4" fill="#0969da">
-    <animateMotion dur="8s" begin="0s" repeatCount="indefinite"><mpath href="#runFlow"/></animateMotion>
-  </circle>
-  <rect x="30" y="84" width="120" height="56" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="30" y="84" width="120" height="56" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.011;0.071;0.131;1" dur="8s" begin="0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="90.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">WEBHOOK</text>
-  <text x="90.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">HMAC verified</text>
-  <path d="M 158.0,107.0 L 166.0,112.0 L 158.0,117.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="174" y="84" width="120" height="56" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="174" y="84" width="120" height="56" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.183;0.243;0.303;1" dur="8s" begin="0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="234.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">CONDENSE</text>
-  <text x="234.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">memory · rewrite</text>
-  <path d="M 302.0,107.0 L 310.0,112.0 L 302.0,117.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="318" y="84" width="120" height="56" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="318" y="84" width="120" height="56" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.354;0.414;0.474;1" dur="8s" begin="0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="378.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">RETRIEVE</text>
-  <text x="378.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">vectors · top 10</text>
-  <path d="M 446.0,107.0 L 454.0,112.0 L 446.0,117.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="462" y="84" width="120" height="56" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="462" y="84" width="120" height="56" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.526;0.586;0.646;1" dur="8s" begin="0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="522.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">RERANK</text>
-  <text x="522.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">cross-enc · top 3</text>
-  <path d="M 590.0,107.0 L 598.0,112.0 L 590.0,117.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="606" y="84" width="120" height="56" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="606" y="84" width="120" height="56" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.697;0.757;0.817;1" dur="8s" begin="0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="666.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">GENERATE</text>
-  <text x="666.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">grounded prompt</text>
-  <path d="M 734.0,107.0 L 742.0,112.0 L 734.0,117.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="750" y="84" width="120" height="56" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="750" y="84" width="120" height="56" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.869;0.929;0.989;1" dur="8s" begin="0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="810.0" y="109.0" text-anchor="middle" class="mono label" font-size="13">REPLY</text>
-  <text x="810.0" y="127.0" text-anchor="middle" class="mono dim" font-size="11">WhatsApp</text>
+<br/>
 
-  <!-- offline: the same pipeline, scored before release -->
-  <text x="30" y="176" class="mono dim" font-size="12"># release gate · evaluated per component, then end-to-end, with an LLM judge</text>
-  <line x1="30" y1="216.0" x2="870" y2="216.0" stroke="#d0d7de" stroke-width="1.5" stroke-dasharray="4 5">
-    <animate attributeName="stroke-dashoffset" values="18;0" dur="1.2s" repeatCount="indefinite"/>
-  </line>
-  <circle r="4" fill="#0969da">
-    <animateMotion dur="8s" begin="-4.0s" repeatCount="indefinite"><mpath href="#gateFlow"/></animateMotion>
-  </circle>
-  <rect x="30" y="190" width="156" height="52" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="30" y="190" width="156" height="52" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.033;0.093;0.153;1" dur="8s" begin="-4.0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="108.0" y="213.0" text-anchor="middle" class="mono label" font-size="13">COMPONENT</text>
-  <text x="108.0" y="231.0" text-anchor="middle" class="mono dim" font-size="11">retriever · generator</text>
-  <path d="M 194.0,211.0 L 202.0,216.0 L 194.0,221.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="210" y="190" width="156" height="52" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="210" y="190" width="156" height="52" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.247;0.307;0.367;1" dur="8s" begin="-4.0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="288.0" y="213.0" text-anchor="middle" class="mono label" font-size="13">END-TO-END</text>
-  <text x="288.0" y="231.0" text-anchor="middle" class="mono dim" font-size="11">RAG triad · GEval</text>
-  <path d="M 374.0,211.0 L 382.0,216.0 L 374.0,221.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="390" y="190" width="192" height="52" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="390" y="190" width="192" height="52" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.483;0.543;0.603;1" dur="8s" begin="-4.0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="486.0" y="213.0" text-anchor="middle" class="mono label" font-size="13">SAFETY + OPS</text>
-  <text x="486.0" y="231.0" text-anchor="middle" class="mono dim" font-size="11">leakage · PII · p95 · cost</text>
-  <path d="M 590.0,211.0 L 598.0,216.0 L 590.0,221.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="606" y="190" width="120" height="52" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-  <rect x="606" y="190" width="120" height="52" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.697;0.757;0.817;1" dur="8s" begin="-4.0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="666.0" y="213.0" text-anchor="middle" class="mono label" font-size="13">COMPARE</text>
-  <text x="666.0" y="231.0" text-anchor="middle" class="mono dim" font-size="11">vs baseline</text>
-  <path d="M 734.0,211.0 L 742.0,216.0 L 734.0,221.0" fill="none" stroke="#57606a" stroke-width="1.5"/>
-  <rect x="750" y="190" width="120" height="52" rx="8" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1"/>
-  <rect x="750" y="190" width="120" height="52" rx="8" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.869;0.929;0.989;1" dur="8s" begin="-4.0s" repeatCount="indefinite"/>
-  </rect>
-  <text x="810.0" y="213.0" text-anchor="middle" class="mono" fill="#1a7f37" font-weight="700" font-size="13">PASS</text>
-  <text x="810.0" y="231.0" text-anchor="middle" class="mono dim" font-size="11">gate → ship</text>
+[![Portfolio](https://img.shields.io/badge/Portfolio-5ee6b0?style=for-the-badge&logo=googlechrome&logoColor=0d1117)](https://ajtiwari1.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ajay-tiwari67/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tiwariajay12351@gmail.com)
 
-  <!-- eval log, one line at a time -->
-  <text x="30" y="272" class="mono" font-size="12" opacity="0" xml:space="preserve"><tspan fill="#0969da">[retriever]</tspan><tspan fill="#24292f"> contextual recall · precision   ≥ 0.7</tspan>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.001;0.030;0.170;0.200;1.000" dur="12.0s" repeatCount="indefinite"/>
-  </text>
-  <text x="30" y="272" class="mono" font-size="12" opacity="0" xml:space="preserve"><tspan fill="#0969da">[generator]</tspan><tspan fill="#24292f"> faithfulness · answer relevancy ≥ 0.7</tspan>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.200;0.230;0.370;0.400;1.000" dur="12.0s" repeatCount="indefinite"/>
-  </text>
-  <text x="30" y="272" class="mono" font-size="12" opacity="0" xml:space="preserve"><tspan fill="#0969da">[judge]    </tspan><tspan fill="#24292f"> GEval: correctness · completeness · style</tspan>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.400;0.430;0.570;0.600;1.000" dur="12.0s" repeatCount="indefinite"/>
-  </text>
-  <text x="30" y="272" class="mono" font-size="12" opacity="0" xml:space="preserve"><tspan fill="#0969da">[safety]   </tspan><tspan fill="#24292f"> scope · leakage · PII · toxicity → hard gate</tspan>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.600;0.630;0.770;0.800;1.000" dur="12.0s" repeatCount="indefinite"/>
-  </text>
-  <text x="30" y="272" class="mono" font-size="12" opacity="0" xml:space="preserve"><tspan fill="#0969da">[ops]      </tspan><tspan fill="#24292f"> p95 ≤ 5s · cost ≤ $0.0015 / query</tspan>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.800;0.830;0.970;0.999;1.000" dur="12.0s" repeatCount="indefinite"/>
-  </text>
-</svg>
+</div>
 
-## Connect with me
+> *"The future belongs to those who can master the art of conversation with machines."*  **Ajay Tiwari**
 
-**Ajay Tiwari** · India
+<br/>
 
-- [Portfolio](https://ajtiwari1.github.io)
-- [LinkedIn](https://www.linkedin.com/in/ajay-tiwari67/)
-- [Email](mailto:tiwariajay12351@gmail.com)
+## 🧬 How I Build AI Systems
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/pipeline-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/pipeline-light.svg">
+  <img src="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/pipeline-dark.svg" alt="Runtime RAG pipeline (webhook → condense → retrieve → rerank → generate → reply) and the release gate: component-level, end-to-end, safety and ops evals compared against a baseline">
+</picture>
+
+</div>
+
+<br/>
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3 align="center">📚 RAG that earns its context</h3>
+      <p align="center">Structure aware chunking, embeddings matched to the domain, and a wide vector search narrowed by a reranker. Follow up questions are rewritten with conversation memory, and answers stay grounded or abstain instead of guessing.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">🤖 Agents that ship to production</h3>
+      <p align="center">Stateful, tool using agents orchestrated as graphs and connected to real systems through MCP servers, APIs and databases. Served with FastAPI behind signed webhooks, with memory, retries and background work, on whatever channel the users already live in.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">🛡️ Evaluation as a release gate</h3>
+      <p align="center">Every stage of a RAG pipeline or agent is scored in isolation with DeepEval, then end to end with LLM as a judge rubrics. Regressions fail the release. In production, LangSmith scores live traces continuously and alerts on any metric drop.</p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+## 🛠️ Tech Stack
+
+<table>
+  <tr>
+    <td><b>🧠 Agents &amp; Frameworks</b></td>
+    <td>
+
+![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![Semantic Kernel](https://img.shields.io/badge/Semantic%20Kernel-5C2D91?style=for-the-badge)
+
+  </td>
+  </tr>
+  <tr>
+    <td><b>🔮 Models &amp; Providers</b></td>
+    <td>
+
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge) ![Anthropic](https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000000) ![OpenRouter](https://img.shields.io/badge/OpenRouter-6467F2?style=for-the-badge&logo=openrouter&logoColor=white) ![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge) ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+
+  </td>
+  </tr>
+  <tr>
+    <td><b>📚 RAG &amp; Vector Stores</b></td>
+    <td>
+
+![Pinecone](https://img.shields.io/badge/Pinecone-1C17FF?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=for-the-badge) ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white) ![Weaviate](https://img.shields.io/badge/Weaviate-00A98F?style=for-the-badge)
+
+  </td>
+  </tr>
+  <tr>
+    <td><b>🛡️ Eval, Guardrails &amp; Observability</b></td>
+    <td>
+
+![DeepEval](https://img.shields.io/badge/DeepEval-7C3AED?style=for-the-badge) ![LLM-as-a-Judge](https://img.shields.io/badge/LLM--as--a--Judge-7C3AED?style=for-the-badge) ![Custom Guardrails](https://img.shields.io/badge/Custom%20Guardrails-B91C1C?style=for-the-badge) ![LangSmith](https://img.shields.io/badge/LangSmith-F47B20?style=for-the-badge)
+
+  </td>
+  </tr>
+  <tr>
+    <td><b>⚙️ Backend &amp; APIs</b></td>
+    <td>
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+
+  </td>
+  </tr>
+  <tr>
+    <td><b>🗄️ Data</b></td>
+    <td>
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+  </td>
+  </tr>
+  <tr>
+    <td><b>☁️ Cloud &amp; DevOps</b></td>
+    <td>
+
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge) ![Docker](https://img.shields.io/badge/Docker-0DB7ED?style=for-the-badge&logo=docker&logoColor=white) ![Podman](https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white) ![Linux VPS](https://img.shields.io/badge/Linux%20VPS-FCC624?style=for-the-badge&logo=linux&logoColor=000000) ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=for-the-badge&logo=digitalocean&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+  </td>
+  </tr>
+</table>
+
+<br/>
+
+## 📊 GitHub Activity
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-theta-rust-54.vercel.app/api?username=&include_all_commits=true&count_private=true&v=3&show_icons=true&bg_color=0d1117&title_color=5ee6b0&text_color=c9d1d9&icon_color=79c0ff&border_color=30363d">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-theta-rust-54.vercel.app/api?username=ajtiwari1&include_all_commits=true&count_private=true&v=3&show_icons=true&bg_color=ffffff&title_color=0969da&text_color=24292f&icon_color=8250df&border_color=d0d7de">
+  <img height="170" src="https://github-readme-stats-theta-rust-54.vercel.app/api?username=ajtiwari1&include_all_commits=true&count_private=true&v=3&show_icons=true&bg_color=0d1117&title_color=5ee6b0&text_color=c9d1d9&icon_color=79c0ff&border_color=30363d" alt="GitHub stats">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-theta-rust-54.vercel.app/api/top-langs/?username=ajtiwari1&include_all_commits=true&count_private=true&v=3&layout=compact&bg_color=0d1117&title_color=5ee6b0&text_color=c9d1d9&icon_color=79c0ff&border_color=30363d">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-theta-rust-54.vercel.app/api/top-langs/?username=ajtiwari1&include_all_commits=true&count_private=true&v=3&layout=compact&bg_color=ffffff&title_color=0969da&text_color=24292f&icon_color=8250df&border_color=d0d7de">
+  <img height="170" src="https://github-readme-stats-theta-rust-54.vercel.app/api/top-langs/?username=ajtiwari1&include_all_commits=true&count_private=true&v=3&layout=compact&bg_color=0d1117&title_color=5ee6b0&text_color=c9d1d9&icon_color=79c0ff&border_color=30363d" alt="Top languages">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-six.vercel.app/?user=ajtiwari1&background=0d1117&border=30363d&stroke=30363d&ring=5ee6b0&fire=5ee6b0&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=5ee6b0&sideLabels=79c0ff&dates=6e7681&v=3">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-six.vercel.app/?user=ajtiwari1&background=ffffff&border=d0d7de&stroke=d0d7de&ring=0969da&fire=0969da&currStreakNum=24292f&sideNums=24292f&currStreakLabel=0969da&sideLabels=8250df&dates=57606a&v=3">
+  <img src="https://github-readme-streak-six.vercel.app/?user=ajtiwari1&background=0d1117&border=30363d&stroke=30363d&ring=5ee6b0&fire=5ee6b0&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=5ee6b0&sideLabels=79c0ff&dates=6e7681&v=3" alt="GitHub streak">
+</picture>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/footer-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/footer-light.svg">
+  <img src="https://raw.githubusercontent.com/ajtiwari1/ajtiwari1/master/assets/footer-dark.svg" alt="exit 0 — thanks for stopping by">
+</picture>
+
+</div>

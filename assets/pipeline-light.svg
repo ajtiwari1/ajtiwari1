@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%" style="background-color: #f8fafc; font-family: 'Courier New', Courier, monospace;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280" style="background-color: #f8fafc; font-family: 'Courier New', Courier, monospace;">
   <!-- Main Terminal Window Frame -->
   <rect x="10" y="10" width="880" height="260" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
 
@@ -9,7 +9,7 @@
 
   <!-- Header Title -->
   <text x="450" y="32" fill="#0f172a" font-size="14" font-weight="bold" text-anchor="middle">
-    <tspan fill="#10b981">ajaytiwari@github:~$</tspan> python -m evals.run suite
+    <tspan fill="#10b981">ajaytiwari@india:~$</tspan> python -m evals.run_suite
   </text>
 
   <!-- Running Badge -->
@@ -24,7 +24,7 @@
   </defs>
 
   <!-- ================= SECTION 1: RUNTIME PIPELINE ================= -->
-  <text x="30" y="62" fill="#64748b" font-size="12" font-weight="bold"># run time  rag pipeline.invoke()</text>
+  <text x="30" y="62" fill="#64748b" font-size="12" font-weight="bold"># runtime · rag_pipeline.invoke()</text>
 
   <!-- Webhook Box -->
   <rect x="30" y="75" width="125" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
