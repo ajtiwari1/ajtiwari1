@@ -74,7 +74,7 @@
     <td><b>📚 RAG &amp; Vector Stores</b></td>
     <td>
 
-![Pinecone](https://img.shields.io/badge/Pinecone-1C17FF?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=for-the-badge) ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white) ![Weaviate](https://img.shields.io/badge/Weaviate-00A98F?style=for-the-badge)
+![Pinecone](https://img.shields.io/badge/Pinecone-1C17FF?style=for-the-badge) ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=for-the-badge) ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white) ![Weaviate](https://img.shields.io/badge/Weaviate-00A98F?style=for-the-badge) ![Qrdant] (https://img.shields.io/badge/Qrdant-00A98F?style=for-the-badge)
 
   </td>
   </tr>
