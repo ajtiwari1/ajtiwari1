@@ -129,11 +129,7 @@
   <img height="170" src="https://github-readme-stats-theta-rust-54.vercel.app/api/top-langs/?username=ajtiwari1&include_all_commits=true&count_private=true&v=3&layout=compact&bg_color=0d1117&title_color=5ee6b0&text_color=c9d1d9&icon_color=79c0ff&border_color=30363d" alt="Top languages">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-six.vercel.app/?user=ajtiwari1&background=0d1117&border=30363d&stroke=30363d&ring=5ee6b0&fire=5ee6b0&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=5ee6b0&sideLabels=79c0ff&dates=6e7681&v=3">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-six.vercel.app/?user=ajtiwari1&background=ffffff&border=d0d7de&stroke=d0d7de&ring=0969da&fire=0969da&currStreakNum=24292f&sideNums=24292f&currStreakLabel=0969da&sideLabels=8250df&dates=57606a&v=3">
-  <img src="https://github-readme-streak-six.vercel.app/?user=ajtiwari1&background=0d1117&border=30363d&stroke=30363d&ring=5ee6b0&fire=5ee6b0&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=5ee6b0&sideLabels=79c0ff&dates=6e7681&v=3" alt="GitHub streak">
-</picture>
+
 
 </div>
 
