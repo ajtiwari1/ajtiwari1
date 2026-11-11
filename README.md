@@ -129,7 +129,16 @@
   <img height="170" src="https://github-readme-stats-theta-rust-54.vercel.app/api/top-langs/?username=ajtiwari1&include_all_commits=true&count_private=true&v=3&layout=compact&bg_color=0d1117&title_color=5ee6b0&text_color=c9d1d9&icon_color=79c0ff&border_color=30363d" alt="Top languages">
 </picture>
 
-
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)"
+      srcset="https://streak-stats.demolab.com/?user=ajtiwari1&theme=dark">
+    <source media="(prefers-color-scheme: light)"
+      srcset="https://streak-stats.demolab.com/?user=ajtiwari1&theme=default">
+    <img src="https://streak-stats.demolab.com/?user=ajtiwari1&theme=dark"
+         alt="GitHub Streak Stats">
+  </picture>
+</p>
 
 </div>
 
